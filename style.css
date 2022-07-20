@@ -210,21 +210,43 @@ footer hr{
     }
 
     .header-para{
-        font-size: 15px;
-        margin-bottom: 30px;
-        height: 50px;
+        height: 45px;
+        white-space: no-wrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        
+        color: rgba(255, 255, 255, 0.7);
     }
 
     .header-img img{
         left: 15px;
     }
+
+
+    .main-section{
+        flex-direction: column;
+        align-items: center;
+    }
     
+    .menu-bar{
+        background-color: transparent;
+        margin-bottom: 50px;
+    }
+
+    .menu-bar ul li a{
+        border: 1px solid rgba(206, 206, 206, 0.7);
+    }
+
+    .menu-bar ul li a:nth-child(2),.menu-bar ul li a:nth-child(3){
+        width: 100px;
+    }
     
 
-    main,footer{
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+
+    footer{
         display: none;
     }
 }
