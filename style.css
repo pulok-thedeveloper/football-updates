@@ -92,14 +92,14 @@ body{
     display: inline-block;
     text-decoration: none;
     width: 160px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
     background-color: #ffffff;
     font-size: 14px;
     color: #161616;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 5px;
 }
 
@@ -177,6 +177,7 @@ footer hr{
     justify-content: space-around;
     align-items: center;
     margin: 0;
+    padding: 0;
 }
 
 .footer-menu ul li a{
@@ -194,8 +195,7 @@ footer hr{
     .header-banner{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        margin-top: 15px;
-        margin-bottom: 50px;
+        margin: 15px 0;
         border-radius: 20px;
         padding: 0 50px;
         text-align: center;
@@ -229,15 +229,19 @@ footer hr{
     
     .menu-bar{
         background-color: transparent;
-        margin-bottom: 50px;
+        margin-bottom: 15px;
     }
 
     .menu-bar ul li a{
         border: 1px solid rgba(206, 206, 206, 0.7);
     }
 
-    .menu-bar ul li a:nth-child(2),.menu-bar ul li a:nth-child(3){
-        width: 100px;
+    .menu-bar ul li:first-child,.menu-bar ul li:nth-child(2){
+        margin-bottom: 15px;
+    }
+
+    .menu-bar ul li:nth-child(2) a, .menu-bar ul li:nth-child(3) a{
+        width: 120px;
     }
     
 
@@ -246,7 +250,13 @@ footer hr{
     }
     
 
-    footer{
-        display: none;
+    .footer-menu ul{
+        flex-direction: column;
     }
+
+    .footer-menu ul li{
+        margin-bottom: 20px;
+    }
+
+    
 }
